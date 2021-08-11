@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.container{
+    margin-top: 20px;
+    position: relative;
+    width: 500px;
+    height: 130px;
+    background-color: #0c6157;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.container .top{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+.container .top .logo{
+text-decoration: none;
+color: white;
+font-size: 22px;
+}
+.container .top .icons i{
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.container .top .icons{
+    position: relative;
+}
+.container .top .icons .menu{
+    position: fixed;
+    width:180px;
+    height: 100px;
+    background-color: #fff;
+    right:700px;
+    padding: 10px;
+    z-index: 999;
+    display: none;
+    transition: all .4s  ;
+}
+.container .top .icons .menu ul {
+    list-style: none;
+}
+.container .top .icons .menu ul li{
+    color: #000;
+    margin-bottom:10px;
+}
+.container .tab{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.container .tab ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .tab ul li{
+    font-size: 23px;
+    cursor: pointer;
+    color: rgb(179, 179, 179);
+    width: 100%;
+    text-align: center;
+}
+.container .tab ul .camera{
+    max-width: 50px;
+   
+}
+.container .tab .tablinks.active{
+    border-bottom: 6px solid #fff;
+    color: #fff;
+}
+.container .tab .tabcontent{
+    position: absolute;
+    padding: 10px;
+    display: none;
+    overflow-y:auto ;
+    width: 100%;
+    height: 500px;
+    border: 3px solid #ccc;
+
+}
+.container .tab .tabcontent ul{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container .tab .tabcontent ul li{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 12px;
+    color: #000;
+}
+.container .tab .tabcontent ul li .badge{
+    background-color: rgb(51, 255, 0);
+    width: 30px;
+    height: 30px;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.container .tab .tabcontent ul li .missed{
+    background-color: rgb(255, 0, 13);
+    width: 30px;
+    height: 30px;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.container .tab .tabcontent .add-st{
+    background-color: rgb(60, 255, 0);
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.container .tab .tabcontent ul li .fa::before{
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .tab .tabcontent ul li .fa{
+    float: left;
+    color: #000;
+}
